@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Moodio — All‑in‑One Video Agent · Yu Tong Tiffany Ling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="atmosphere" aria-hidden="true">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+</div>
+<div class="noise" aria-hidden="true"></div>
+
+<!-- ============ Nav ============ -->
+<nav class="glass" role="navigation">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand"><span class="ytl-mark">YTTL</span><span class="ytl-name"><span class="ytl-grp"><b>Y</b><span class="ytl-rest">u</span></span><span class="ytl-grp"><b>T</b><span class="ytl-rest">ong</span></span><span class="ytl-grp"><b>T</b><span class="ytl-rest">iffany</span></span><span class="ytl-grp"><b>L</b><span class="ytl-rest">ing</span><span class="ytl-dot">..</span></span></span></a>
+    <div class="links">
+      <a href="../index.html" class="active">
+        <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg></span>
+        <span class="lbl-long">Design</span><span class="lbl-short">Design</span>
+      </a>
+      
+      <a href="../research.html">
+        <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+        <span class="lbl-long">About</span><span class="lbl-short">About</span>
+      </a>
+      
+      <a href="../resume.html">
+        <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg></span>
+        Resume
+      </a>
+      <a class="icon-link" data-tip="LinkedIn" href="https://www.linkedin.com/in/yttl" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect x="2" y="9" width="4" height="12"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+      </a>
+      <a class="icon-link" data-tip="Email me" href="mailto:ttiffanyyllingg@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+      <a class="icon-link" data-tip="Google Scholar" href="https://scholar.google.com/citations?user=" target="_blank" rel="noopener" aria-label="Google Scholar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 10v6"/>
+          <path d="M2 10l10-5 10 5-10 5z"/>
+          <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+        </svg>
+      </a>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ Case study ============ -->
+<main>
+  <div class="container">
+    <div class="case-layout">
+
+      <!-- Sticky sidebar with TOC -->
+      <aside class="case-sidebar">
+        <div class="case-back">
+          <a href="../index.html">← Back</a>
+        </div>
+        <ul class="case-toc">
+          <li><a href="#overview" class="is-active">Overview</a></li>
+          <li><a href="#capabilities">Three Capabilities</a></li>
+          <li><a href="#research">Research Foundation</a></li>
+          <li><a href="#adoption">Adoption</a></li>
+        </ul>
+        <a class="case-cta-btn case-cta-btn--sidebar" href="https://moodio.art" target="_blank" rel="noopener">
+          Visit moodio.art
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </aside>
+
+      <!-- Main content -->
+      <article class="case-content">
+
+        <header class="case-hero reveal">
+          <div class="crumb">DataPizza · B2C · AI Agent · 2025 — Now</div>
+          <h1>Moodio — All‑in‑One <em>Video Agent</em></h1>
+          <p class="lead">A web‑based agent that helps anyone brainstorm, generate and edit
+            targeted AI video outputs — with a behavior‑driven data flywheel improving the
+            model with every session. <strong style="color:var(--fg)">Work in progress — beta launched March 2026.</strong></p>
+
+          <dl class="case-meta case-meta--team-wide">
+            <div>
+              <dt>Role</dt>
+              <dd>Solo Designer<br/>+ Vibe‑Code Co‑Builder</dd>
+            </div>
+            <div>
+              <dt>Timeline</dt>
+              <dd>Jan 2025 — Now</dd>
+            </div>
+            <div>
+              <dt>Team</dt>
+              <dd>1 designer (me)<br/>6 research &amp; engineering<br/>3 product &amp; data<br/>5 filmmakers · 3 advisors</dd>
+            </div>
+            <div>
+              <dt>Tools</dt>
+              <dd>Figma · Cursor · Claude<br/>Next.js · LLM APIs</dd>
+            </div>
+          </dl>
+
+          <div class="vibe-build reveal">
+            <div class="vibe-build-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5L12 2z"/>
+                <path d="M19 14l.8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8L19 14z"/>
+              </svg>
+              <span>Build Method · Vibe‑Coded with Engineering</span>
+            </div>
+            <p>This product didn't go through traditional handoff. I designed every flow in Figma and <strong>vibe‑coded each screen shoulder‑to‑shoulder with engineering</strong> in Cursor + Claude — taking ideas from sketch to production in the same afternoon. The result: <strong>design and code stayed one conversation</strong>, not two artifacts.</p>
+          </div>
+        </header>
+
+        <!-- Section 01 — Overview -->
+        <section id="overview" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">Section 01</div>
+            <h2>Where <em>professional craft compounds.</em></h2>
+            <p><strong style="color:var(--fg)">Turn every project into an AI asset. Accelerate professional film creation.</strong></p>
+            <p>One agent that runs your studio's whole workflow. Built by a CMU foundation-model research team — working on expert data curation, agent evaluation, and data-flywheel post-training. Top-conference research adopted by <strong style="color:var(--fg)">100+ AI labs</strong> including Google DeepMind, ByteDance, and xAI.</p>
+          </div>
+        </section>
+
+        <!-- Section 02 — Three Capabilities -->
+        <section id="capabilities" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">Section 02</div>
+            <h2>Three Core Capabilities</h2>
+            <p>One agent for the whole studio — built on three complementary pillars.</p>
+          </div>
+          <ul class="case-list">
+            <li><strong>Industry-leading visual retrieval.</strong> Search across millions of frames with cinematic precision — outperforms both Google Gemini Embedding 2 and Alibaba Qwen-3-VL Embedding on Moodio's benchmarks.</li>
+            <li><strong>AI workflow spanning the full film pipeline.</strong> From brief to mood, shot list to cut — one chat surface that switches between retrieval, generation, and inline edit without leaving the canvas.</li>
+            <li><strong>Personalized agent shaped by your team.</strong> A data flywheel built from real user interactions — the agent learns each studio's taste, references, and conventions session by session.</li>
+          </ul>
+        </section>
+
+        <!-- Section 03 — Research Foundation -->
+        <section id="research" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">Section 03</div>
+            <h2>Moodio is a <em>research-driven</em> company.</h2>
+            <p>Our research has become a benchmark in video understanding and cinematic generation evaluation — published at <strong style="color:var(--fg)">CVPR, NeurIPS, and ECCV</strong>, adopted by frontier labs at Google DeepMind, ByteDance, xAI, Kling, Midjourney and more.</p>
+          </div>
+          <div class="research-grid">
+            <article class="research-card">
+              <div class="research-venue">NeurIPS 2025</div>
+              <div class="research-tag">Spotlight · Top 3%</div>
+              <h3 class="research-title">CameraBench</h3>
+              <p class="research-desc">Understanding camera motion in any video. Adopted by Google DeepMind, xAI, Kling, and frontier video labs.</p>
+              <a class="research-link" href="#">Read paper <span>→</span></a>
+            </article>
+            <article class="research-card">
+              <div class="research-venue">CVPR 2026</div>
+              <div class="research-tag">Highlight · Top 3%</div>
+              <h3 class="research-title">CHAI</h3>
+              <p class="research-desc">Building precise video language with human-AI oversight. The framework behind Moodio's caption quality and retrieval precision.</p>
+              <a class="research-link" href="#">Read paper <span>→</span></a>
+            </article>
+            <article class="research-card">
+              <div class="research-venue">ECCV 2024</div>
+              <div class="research-tag">Adopted in Google Imagen-3</div>
+              <h3 class="research-title">VQAScore</h3>
+              <p class="research-desc">State-of-the-art metric for evaluating text-to-visual generation. Google DeepMind named it the strongest replacement for CLIPScore.</p>
+              <a class="research-link" href="#">Read paper <span>→</span></a>
+            </article>
+            <article class="research-card">
+              <div class="research-venue">CVPR 2024</div>
+              <div class="research-tag">Best Paper · SynData Workshop</div>
+              <h3 class="research-title">GenAI-Bench</h3>
+              <p class="research-desc">Benchmark for compositional text-to-visual generation. Uniquely adopted in the official Google Imagen-4 technical report.</p>
+              <a class="research-link" href="#">Read paper <span>→</span></a>
+            </article>
+            <article class="research-card">
+              <div class="research-venue">Whitepaper</div>
+              <div class="research-tag">Cinematic Video Search · SOTA</div>
+              <h3 class="research-title">Moodio Retrieval</h3>
+              <p class="research-desc">The first to bring visual reference into the video generation workflow. Retrieval outperforms both Google Gemini Embedding 2 and Alibaba Qwen-3-VL Embedding.</p>
+              <a class="research-link" href="#">Read paper <span>→</span></a>
+            </article>
+            <article class="research-card">
+              <div class="research-venue">Whitepaper · Forthcoming</div>
+              <div class="research-tag">Agent Post-Training</div>
+              <h3 class="research-title">Moodio Agent</h3>
+              <p class="research-desc">First end-to-end video production agent with reward learning from real user interactions. The data flywheel behind studio-grade workflow.</p>
+              <a class="research-link" href="#">Read paper <span>→</span></a>
+            </article>
+          </div>
+        </section>
+
+        <!-- Section 04 — Adoption -->
+        <section id="adoption" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">Section 04</div>
+            <h2>Frontier labs and studios use our <em>datasets and models.</em></h2>
+            <p>Two numbers tell the story.</p>
+          </div>
+          <div class="soca-stats" style="grid-template-columns: repeat(2, 1fr);">
+            <div class="soca-stat"><div class="soca-stat-num">2M+</div><div class="soca-stat-label">HuggingFace downloads</div></div>
+            <div class="soca-stat"><div class="soca-stat-num">100+</div><div class="soca-stat-label">industry labs using<br/>our research</div></div>
+          </div>
+          <p class="soca-p"><strong style="color:var(--fg)">In use at</strong></p>
+          <div class="logo-grid">
+            <div class="logo-cell">
+              <div class="logo-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linecap="round">
+                  <path d="M32 8a24 24 0 1 0 24 24"/>
+                  <path d="M32 18a14 14 0 0 1 14 14"/>
+                  <path d="M32 28a4 4 0 0 1 4 4"/>
+                </svg>
+              </div>
+              <div class="logo-label">Google DeepMind</div>
+            </div>
+            <div class="logo-cell">
+              <div class="logo-icon" aria-hidden="true">
+                <svg viewBox="0 0 60 48" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                  <rect x="2" y="14" width="9" height="24" rx="1"/>
+                  <rect x="16" y="4" width="9" height="40" rx="1"/>
+                  <rect x="30" y="18" width="9" height="20" rx="1"/>
+                  <rect x="44" y="10" width="9" height="32" rx="1"/>
+                </svg>
+              </div>
+              <div class="logo-label">ByteDance</div>
+            </div>
+            <div class="logo-cell">
+              <div class="logo-icon"><span class="logo-mark logo-mark--bold">xAI</span></div>
+              <div class="logo-label">xAI</div>
+            </div>
+            <div class="logo-cell">
+              <div class="logo-icon"><span class="logo-mark">Kling</span></div>
+              <div class="logo-label">Kling</div>
+            </div>
+            <div class="logo-cell">
+              <div class="logo-icon"><span class="logo-mark logo-mark--italic">MJ</span></div>
+              <div class="logo-label">Midjourney</div>
+            </div>
+            <div class="logo-cell">
+              <div class="logo-icon"><span class="logo-mark">Runway</span></div>
+              <div class="logo-label">Runway</div>
+            </div>
+            <div class="logo-cell">
+              <div class="logo-icon"><span class="logo-mark">Luma</span></div>
+              <div class="logo-label">Luma</div>
+            </div>
+            <div class="logo-cell">
+              <div class="logo-icon"><span class="logo-mark">Adobe</span></div>
+              <div class="logo-label">Adobe</div>
+            </div>
+            <div class="logo-cell">
+              <div class="logo-icon"><span class="logo-mark">Tencent</span></div>
+              <div class="logo-label">Tencent</div>
+            </div>
+            <div class="logo-cell">
+              <div class="logo-icon" aria-hidden="true">
+                <div class="logo-squares"><span></span><span></span><span></span><span></span></div>
+              </div>
+              <div class="logo-label">Microsoft</div>
+            </div>
+            <div class="logo-cell">
+              <div class="logo-icon"><span class="logo-mark logo-mark--wide">SenseTime</span></div>
+              <div class="logo-label">SenseTime</div>
+            </div>
+            <div class="logo-cell">
+              <div class="logo-icon" aria-hidden="true"><span class="logo-mi">mi</span></div>
+              <div class="logo-label">Xiaomi</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Next project -->
+        <a class="case-next reveal" href="soca.html">
+          <div>
+            <div class="label">Next project</div>
+            <h3>SOCA — AI Job‑Seeking Platform</h3>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">© 2026 Yu Tong Tiffany Ling · Built in Menlo Park · YTTL</div>
+</footer>
+
+<script>
+  // Theme toggle
+  const root = document.documentElement;
+  const toggle = document.getElementById('themeToggle');
+  const stored = localStorage.getItem('yttl-theme');
+  if (stored) root.setAttribute('data-theme', stored);
+  toggle.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('yttl-theme', next);
+  });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Card hover spotlight
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', `${e.clientX - r.left}px`);
+      card.style.setProperty('--my', `${e.clientY - r.top}px`);
+    });
+  });
+
+  // Subtle parallax on blobs
+  const blobs = document.querySelectorAll('.blob');
+  window.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 20;
+    const y = (e.clientY / window.innerHeight - 0.5) * 20;
+    blobs.forEach((b, i) => {
+      const k = (i + 1) * 0.6;
+      b.style.transform = `translate(${x * k}px, ${y * k}px)`;
+    });
+  }, { passive: true });
+
+  // Hamburger (mobile)
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.querySelector('nav .links');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('is-open');
+      hamburger.classList.toggle('is-open', open);
+      hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('is-open');
+        hamburger.classList.remove('is-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+    document.addEventListener('click', (e) => {
+      if (!navLinks.contains(e.target) && !hamburger.contains(e.target) && navLinks.classList.contains('is-open')) {
+        navLinks.classList.remove('is-open');
+        hamburger.classList.remove('is-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  // Case study: TOC scrollspy + smooth scroll
+  const tocLinks = document.querySelectorAll('.case-toc a');
+  const sections = document.querySelectorAll('.case-section');
+
+  const setActive = (id) => {
+    tocLinks.forEach(a => a.classList.toggle('is-active', a.getAttribute('href') === '#' + id));
+  };
+
+  const spy = new IntersectionObserver((entries) => {
+    // Find the section most in view
+    const visible = entries.filter(e => e.isIntersecting).sort((a,b) => b.intersectionRatio - a.intersectionRatio);
+    if (visible.length) setActive(visible[0].target.id);
+  }, { rootMargin: '-25% 0px -60% 0px', threshold: [0, 0.1, 0.3, 0.5, 0.8] });
+
+  sections.forEach(s => spy.observe(s));
+
+  tocLinks.forEach(a => {
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      const id = a.getAttribute('href').slice(1);
+      const target = document.getElementById(id);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setActive(id);
+      }
+    });
+  });
+</script>
+</body>
+</html>

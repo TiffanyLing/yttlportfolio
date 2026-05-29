@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SOCA — End-to-End Hiring Platform · Yu Tong Tiffany Ling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="atmosphere" aria-hidden="true">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+</div>
+<div class="noise" aria-hidden="true"></div>
+
+<!-- ============ Nav ============ -->
+<nav class="glass" role="navigation">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand"><span class="ytl-mark">YTTL</span><span class="ytl-name"><span class="ytl-grp"><b>Y</b><span class="ytl-rest">u</span></span><span class="ytl-grp"><b>T</b><span class="ytl-rest">ong</span></span><span class="ytl-grp"><b>T</b><span class="ytl-rest">iffany</span></span><span class="ytl-grp"><b>L</b><span class="ytl-rest">ing</span><span class="ytl-dot">..</span></span></span></a>
+    <div class="links">
+      <a href="../index.html" class="active">
+        <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg></span>
+        <span class="lbl-long">Design</span><span class="lbl-short">Design</span>
+      </a>
+      
+      <a href="../research.html">
+        <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+        <span class="lbl-long">About</span><span class="lbl-short">About</span>
+      </a>
+      
+      <a href="../resume.html">
+        <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg></span>
+        Resume
+      </a>
+      <a class="icon-link" data-tip="LinkedIn" href="https://www.linkedin.com/in/yttl" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect x="2" y="9" width="4" height="12"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+      </a>
+      <a class="icon-link" data-tip="Email me" href="mailto:ttiffanyyllingg@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+      <a class="icon-link" data-tip="Google Scholar" href="https://scholar.google.com/citations?user=" target="_blank" rel="noopener" aria-label="Google Scholar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 10v6"/>
+          <path d="M2 10l10-5 10 5-10 5z"/>
+          <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+        </svg>
+      </a>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ Case study ============ -->
+<main>
+  <div class="container">
+    <div class="case-layout">
+
+      <!-- Sticky sidebar with TOC -->
+      <aside class="case-sidebar">
+        <div class="case-back">
+          <a href="../index.html">← Back</a>
+        </div>
+                <ul class="case-toc">
+          <li><a href="#context" class="is-active">Context</a></li>
+          <li><a href="#research">User Research</a></li>
+          <li><a href="#problem">Problem</a></li>
+          <li><a href="#solution">Solution Thinking</a></li>
+          <li><a href="#product">The Product</a></li>
+          <li><a href="#system">Design System</a></li>
+          <li><a href="#pm">PM Hat</a></li>
+          <li><a href="#outcome">Outcome &amp; Impact</a></li>
+          <li><a href="#reflection">Reflection</a></li>
+        </ul>
+        <a class="case-cta-btn case-cta-btn--sidebar" href="https://socaapp.com" target="_blank" rel="noopener">
+          Try socaapp.com
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </aside>
+
+      <!-- Main content -->
+      <article class="case-content">
+
+        <header class="case-hero reveal">
+          <div class="crumb">SOCA · End-to-End Hiring Platform · Web + Chrome Extension</div>
+          <h1>SOCA — Designing for <em>Three Sides</em> of the Market</h1>
+          <p class="lead">An end-to-end hiring platform connecting job seekers, recruiters, and ambassadors. I drove it from 0→1 — product strategy, all three sides of the UX/UI, and a design system built from scratch. <a href="https://socaapp.com" target="_blank" rel="noopener" style="color:var(--accent-2)">socaapp.com ↗</a></p>
+
+                    <dl class="case-meta">
+            <div>
+              <dt>Role</dt>
+              <dd>Lead Product Designer<br/>&amp; Product Manager</dd>
+            </div>
+            <div>
+              <dt>Scope</dt>
+              <dd>Product strategy<br/>UX/UI · Design System</dd>
+            </div>
+            <div>
+              <dt>Platform</dt>
+              <dd>Web + Chrome Extension</dd>
+            </div>
+            <div>
+              <dt>Stakeholders</dt>
+              <dd>Job Seekers · Recruiters<br/>Ambassadors</dd>
+            </div>
+          </dl>
+        </header>
+
+        <!-- 01 Context -->
+        <section id="context" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">01</div>
+            <h2>Context</h2>
+            <p>The hiring market has hit a breaking point. Popular roles attract thousands of applications within hours of posting — leaving job seekers shouting into a void, and recruiters drowning in resumes they don't have time to read. What looked like a job-seeker problem turned out to be something bigger: a systemic breakdown in how information flows across the entire hiring loop.</p>
+            <p>As SOCA's product lead and primary designer, I drove the product from 0→1 — defining the product shape, designing all three sides of the experience, and building a scalable design system from scratch.</p>
+          </div>
+        </section>
+
+        <!-- 02 User Research -->
+        <section id="research" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">02</div>
+            <h2>User Research</h2>
+            <p>To avoid building on instinct alone, I ran three parallel research tracks before a single pixel was drawn.</p>
+          </div>
+
+          <h3 class="case-subhead">Quantitative — Survey</h3>
+          <p class="soca-p">842 valid responses across the North American job market, weighted toward Tech and Design candidates. Key findings:</p>
+          <ul class="case-list case-list--bullet">
+            <li><strong>78%</strong> of job seekers heard nothing back within two weeks of applying</li>
+            <li>Applicants averaged <strong>12–15 applications per day</strong>, with only a <strong>3.2% interview conversion rate</strong></li>
+            <li><strong>64%</strong> were willing to pay for tools that improve application efficiency — sweet spot <strong>$15–$40/month</strong></li>
+            <li><strong>71%</strong> of recruiters spent <strong>2+ hours per day</strong> on resume screening alone</li>
+          </ul>
+
+          <h3 class="case-subhead">Qualitative — 1:1 Interviews</h3>
+          <ul class="case-list case-list--bullet">
+            <li><strong>18 job seekers</strong> (6 new grads, 8 with 3–5 years of experience, 4 career switchers)</li>
+            <li><strong>9 recruiters / HR</strong> (5 from small-to-mid companies, 4 from large tech)</li>
+            <li><strong>5 ambassadors</strong> (3 employee referrers, 2 niche creators)</li>
+          </ul>
+
+          <h3 class="case-subhead">Competitive Audit</h3>
+          <p class="soca-p">Deep-dive teardowns of LinkedIn, Indeed, BOSS Zhipin, and Lever — mapping where the application flow, matching logic, and referral systems each break down.</p>
+
+          <h3 class="case-subhead">Key Insights</h3>
+          <div class="soca-table-wrap">
+            <table class="soca-table">
+              <thead><tr><th>User Group</th><th>Core Pain Point</th><th>Behavioral Insight</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Job Seekers</strong></td><td>Applications vanish into a black hole; unclear which roles actually fit</td><td>Average 5+ open application tabs; constant copy-pasting</td></tr>
+                <tr><td><strong>Recruiters</strong></td><td>Overwhelmed by volume; can't surface real matches</td><td>Want conversational, not email-driven, communication</td></tr>
+                <tr><td><strong>Ambassadors</strong></td><td>No visibility into referral progress or rewards</td><td>Want a dashboard showing where their referrals stand</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 03 Problem Statement -->
+        <section id="problem" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">03</div>
+            <h2>Problem Statement</h2>
+          </div>
+          <ul class="case-list case-list--bullet">
+            <li><strong>Job seekers</strong> can't get seen inside the narrow window after a role goes live.</li>
+            <li><strong>Recruiters</strong> can't separate signal from noise in a flood of resumes.</li>
+            <li><strong>Referrers</strong> have never been given a real tool — or real incentive — to participate at scale.</li>
+          </ul>
+          <p class="soca-p">Hiring is a three-sided problem. Almost every product on the market solves only one side of it.</p>
+          <p class="soca-callout"><strong>My product bet:</strong> SOCA's edge isn't "a better job board." It's one product that connects all three sides, uses AI to compress the loop, and makes the incentives align so all three sides actually win.</p>
+        </section>
+
+        <!-- 04 Solution Thinking -->
+        <section id="solution" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">04</div>
+            <h2>Solution Thinking</h2>
+            <p>During solution exploration, I made several key product decisions while wearing the PM hat.</p>
+          </div>
+
+          <h3 class="case-subhead">Decision 1 — Why end-to-end, not a point solution</h3>
+          <p class="soca-p">Many teams would have shipped just an Auto Apply tool or just a resume optimizer. I pushed the team toward the full loop because pain in job searching is continuous — a weak resume leads to wasted applications, which leads to no interviews, which leads to no offers. Any broken link in the chain causes user drop-off. An integrated product compounds retention and LTV in a way point tools structurally can't.</p>
+
+          <h3 class="case-subhead">Decision 2 — Why a Chrome Extension, not web-only</h3>
+          <p class="soca-p">Web alone can't reach where users actually apply — LinkedIn, company career pages, Greenhouse, Workday. The extension lets SOCA live inside the user's existing workflow rather than asking them to migrate. A textbook "meet users where they are" decision.</p>
+
+          <h3 class="case-subhead">Decision 3 — Why introduce the Ambassador layer</h3>
+          <p class="soca-p">Traditional referrals run on goodwill, which doesn't scale. I designed a tiered bonus structure (application → interview → onsite → offer, each unlocking higher rewards) that turns referring from a favor into a side income. In return, SOCA gets a pipeline of pre-qualified, high-intent candidates.</p>
+        </section>
+
+        <!-- 05 The Product -->
+        <section id="product" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">05</div>
+            <h2>The Product — Designing for Three Sides</h2>
+          </div>
+
+          <h3 class="case-subhead">🎯 For Job Seekers</h3>
+          <ul class="case-list">
+            <li><strong>Match Score.</strong> A compatibility score between a user's resume and any given JD. Instead of one cold number, the score breaks down into three dimensions — <strong>Experience · Skills · Culture</strong> — so users see <em>why</em> they don't match and what to fix.</li>
+            <li><strong>AI Resume Tailoring.</strong> One click to tailor a resume to a target role. We deliberately avoided full auto-rewrite — users see a <strong>diff view</strong> and accept/reject each change. A trust-building decision: people feel deep ownership over their resumes, and a black-box rewrite triggers resistance.</li>
+            <li><strong>Chrome Extension — One-Click Apply.</strong> Auto-detects fields on any application page and fills in pre-saved profile data. I built dedicated adapters for the major ATS systems (Greenhouse, Lever, Workday) — field-mapping accuracy is the make-or-break here.</li>
+            <li><strong>Auto Apply.</strong> Paid users set targeting parameters and SOCA applies the instant a matching role goes live. I added an optional <strong>24-hour preview window</strong> before applications go out, because fully autonomous applying takes away the user's sense of control.</li>
+            <li><strong>Mentor.</strong> Recorded interview prep courses + 1:1 coaching, covering three interview rounds plus portfolio review for UX/PM candidates — closing the loop from apply → interview → offer.</li>
+          </ul>
+
+          <h3 class="case-subhead">🎯 For Recruiters — SmartHire</h3>
+          <p class="soca-p">Direct messaging + two-way smart matching + integrated referral pipeline + access to exclusive Partner roles. The interface references the conversational pace of BOSS Zhipin but strips out the "always-pinging" quality that doesn't translate to a Western professional context — using a more restrained notification rhythm and a more polished visual language.</p>
+
+          <h3 class="case-subhead">🎯 For Ambassadors</h3>
+          <p class="soca-p">A referral dashboard that visualizes every referred candidate's stage, status, and associated reward. I designed a <strong>dual progress-bar + timeline view</strong>, so an ambassador can see at a glance which candidate is stuck where — directly addressing a top complaint from my interviews.</p>
+        </section>
+
+        <!-- 06 Design System -->
+        <section id="system" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">06</div>
+            <h2>Design System — SOCA System</h2>
+            <p>This is the part of the project I went deepest on. For a three-sided product, visual and interaction consistency is the prerequisite for scaling. I built the system from scratch.</p>
+          </div>
+          <ul class="case-list case-list--bullet">
+            <li><strong>Foundation:</strong> color tokens (light + dark), typography scale, 4pt spacing grid, elevation</li>
+            <li><strong>Components:</strong> 60+ primitives and composite components — each with six fully designed states (default · hover · active · disabled · loading · error)</li>
+            <li><strong>Patterns:</strong> unified standards for form filling, empty states, loading, and error handling</li>
+            <li><strong>Cross-platform tokens:</strong> a shared token layer across web and extension, with custom responsive rules for the extension's narrow viewport</li>
+            <li><strong>Documentation:</strong> every component shipped with usage guidelines, Do's &amp; Don'ts, and accessibility specs (WCAG AA minimum)</li>
+          </ul>
+          <p class="soca-callout"><strong>Why build it instead of using shadcn or Material?</strong> SOCA's three user groups have radically different mental models — job seekers need encouragement, recruiters need professionalism, ambassadors need data clarity. Off-the-shelf systems can't carry the "one brand, three personalities" demand. Building it ourselves let me keep structural consistency while expressing differentiation through token swaps.</p>
+        </section>
+
+        <!-- 07 PM Hat -->
+        <section id="pm" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">07</div>
+            <h2>Wearing the PM Hat</h2>
+            <p>Beyond design, as co-founder / CPO I drove these product decisions:</p>
+          </div>
+          <ul class="case-list case-list--bullet">
+            <li><strong>Pricing strategy:</strong> designed the Auto Apply subscription tiers (Free / Pro / Pro+) based on the payment trigger points surfaced in user interviews</li>
+            <li><strong>MVP scoping:</strong> cut Mentor 1:1 from V1 to validate the core application loop first</li>
+            <li><strong>Metrics definition:</strong> aligned the team on a North Star — <strong>Application-to-Interview Conversion Rate</strong> — and designed the in-product tracking to match</li>
+            <li><strong>Partner strategy:</strong> pushed for exclusive role partnerships as a structural moat against LinkedIn</li>
+          </ul>
+        </section>
+
+        <!-- 08 Outcome & Impact -->
+        <section id="outcome" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">08</div>
+            <h2>Outcome &amp; Impact</h2>
+            <p>14 months post-launch, SOCA has built a healthy three-sided ecosystem.</p>
+          </div>
+
+          <div class="soca-stats">
+            <div class="soca-stat"><div class="soca-stat-num">250k+</div><div class="soca-stat-label">registered users<br/>(218k seekers · 28k recruiters · 4k ambassadors)</div></div>
+            <div class="soca-stat"><div class="soca-stat-num">94k</div><div class="soca-stat-label">MAU · 42% 7-day retention</div></div>
+            <div class="soca-stat"><div class="soca-stat-num">11.7%</div><div class="soca-stat-label">apply→interview rate<br/>(from 3.2% — a 3.6× lift)</div></div>
+            <div class="soca-stat"><div class="soca-stat-num">76k</div><div class="soca-stat-label">extension installs<br/>18 min avg daily use</div></div>
+          </div>
+
+          <h3 class="case-subhead">Core Conversion</h3>
+          <ul class="case-list case-list--bullet">
+            <li><strong>Application-to-Interview Conversion:</strong> 3.2% → <strong>11.7%</strong> (3.6×)</li>
+            <li><strong>AI Resume Tailoring:</strong> 68% of active users use it at least once a week</li>
+            <li><strong>Auto Apply Free → Pro conversion:</strong> 8.3% (vs. SaaS benchmark of 2–5%)</li>
+          </ul>
+
+          <h3 class="case-subhead">Three-Sided Efficiency Gains</h3>
+          <ul class="case-list case-list--bullet">
+            <li><strong>Job seekers:</strong> time-to-first-interview dropped from 4.2 weeks → 1.6 weeks</li>
+            <li><strong>Recruiters:</strong> resume screening time down 57%, match accuracy up 2.4×</li>
+            <li><strong>Ambassadors:</strong> average monthly bonus $340; top creators reach $2,000+</li>
+          </ul>
+
+          <h3 class="case-subhead">Design System Impact</h3>
+          <ul class="case-list case-list--bullet">
+            <li>SOCA System now powers 3 product surfaces and 60+ composite components</li>
+            <li>Design-to-engineering handoff efficiency up ~40% (82% component reuse rate)</li>
+            <li>Ship cycle for new features: 3 weeks → 11 days</li>
+          </ul>
+        </section>
+
+        <!-- 09 Reflection -->
+        <section id="reflection" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">09</div>
+            <h2>Reflection</h2>
+          </div>
+          <p class="soca-callout">Good product design doesn't start with UI. It starts with whether you've truly understood every role in the loop.</p>
+          <p class="soca-p">The hard part of a three-sided product isn't designing three interfaces — it's making sure each of the three roles feels respected in the same ecosystem. Design system, AI, incentive structures — those are just instruments. The real design work is getting <strong>"being seen, being matched, being rewarded"</strong> right.</p>
+          <p class="soca-p">SOCA gave me the chance to grow in both directions at once — design depth (system thinking, craft, detail) and product breadth (cross-side strategy, commercial decisions). That intersection is exactly where I want to keep building as a Senior Product Designer.</p>
+        </section>
+
+        <!-- Next project -->
+        <a class="case-next reveal" href="alibaba-xiniu.html">
+          <div>
+            <div class="label">Next project</div>
+            <h3>Alibaba Xiniu Manufacture</h3>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">© 2026 Yu Tong Tiffany Ling · Built in Menlo Park · YTTL</div>
+</footer>
+
+<script>
+  // Theme toggle
+  const root = document.documentElement;
+  const toggle = document.getElementById('themeToggle');
+  const stored = localStorage.getItem('yttl-theme');
+  if (stored) root.setAttribute('data-theme', stored);
+  toggle.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('yttl-theme', next);
+  });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Card hover spotlight
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', `${e.clientX - r.left}px`);
+      card.style.setProperty('--my', `${e.clientY - r.top}px`);
+    });
+  });
+
+  // Subtle parallax on blobs
+  const blobs = document.querySelectorAll('.blob');
+  window.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 20;
+    const y = (e.clientY / window.innerHeight - 0.5) * 20;
+    blobs.forEach((b, i) => {
+      const k = (i + 1) * 0.6;
+      b.style.transform = `translate(${x * k}px, ${y * k}px)`;
+    });
+  }, { passive: true });
+
+  // Hamburger (mobile)
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.querySelector('nav .links');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('is-open');
+      hamburger.classList.toggle('is-open', open);
+      hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('is-open');
+        hamburger.classList.remove('is-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+    document.addEventListener('click', (e) => {
+      if (!navLinks.contains(e.target) && !hamburger.contains(e.target) && navLinks.classList.contains('is-open')) {
+        navLinks.classList.remove('is-open');
+        hamburger.classList.remove('is-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  // Case study: TOC scrollspy + smooth scroll
+  const tocLinks = document.querySelectorAll('.case-toc a');
+  const sections = document.querySelectorAll('.case-section');
+
+  const setActive = (id) => {
+    tocLinks.forEach(a => a.classList.toggle('is-active', a.getAttribute('href') === '#' + id));
+  };
+
+  const spy = new IntersectionObserver((entries) => {
+    // Find the section most in view
+    const visible = entries.filter(e => e.isIntersecting).sort((a,b) => b.intersectionRatio - a.intersectionRatio);
+    if (visible.length) setActive(visible[0].target.id);
+  }, { rootMargin: '-25% 0px -60% 0px', threshold: [0, 0.1, 0.3, 0.5, 0.8] });
+
+  sections.forEach(s => spy.observe(s));
+
+  tocLinks.forEach(a => {
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      const id = a.getAttribute('href').slice(1);
+      const target = document.getElementById(id);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setActive(id);
+      }
+    });
+  });
+</script>
+</body>
+</html>

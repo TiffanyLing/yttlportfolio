@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>XYG Window — Brand & Comms (2023) · Yu Tong Tiffany Ling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="atmosphere" aria-hidden="true">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+</div>
+<div class="noise" aria-hidden="true"></div>
+
+<!-- ============ Nav ============ -->
+<nav class="glass" role="navigation">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand"><span class="ytl-mark">YTTL</span><span class="ytl-name"><span class="ytl-grp"><b>Y</b><span class="ytl-rest">u</span></span><span class="ytl-grp"><b>T</b><span class="ytl-rest">ong</span></span><span class="ytl-grp"><b>T</b><span class="ytl-rest">iffany</span></span><span class="ytl-grp"><b>L</b><span class="ytl-rest">ing</span><span class="ytl-dot">..</span></span></span></a>
+    <div class="links">
+      <a href="../index.html" class="active">
+        <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg></span>
+        <span class="lbl-long">Design</span><span class="lbl-short">Design</span>
+      </a>
+      
+      <a href="../research.html">
+        <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+        <span class="lbl-long">About</span><span class="lbl-short">About</span>
+      </a>
+      
+      <a href="../resume.html">
+        <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg></span>
+        Resume
+      </a>
+      <a class="icon-link" data-tip="LinkedIn" href="https://www.linkedin.com/in/yttl" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect x="2" y="9" width="4" height="12"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+      </a>
+      <a class="icon-link" data-tip="Email me" href="mailto:ttiffanyyllingg@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+      <a class="icon-link" data-tip="Google Scholar" href="https://scholar.google.com/citations?user=" target="_blank" rel="noopener" aria-label="Google Scholar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 10v6"/>
+          <path d="M2 10l10-5 10 5-10 5z"/>
+          <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+        </svg>
+      </a>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ Case study ============ -->
+<main>
+  <div class="container">
+    <div class="case-layout">
+
+      <!-- Sticky sidebar with TOC -->
+      <aside class="case-sidebar">
+        <div class="case-back">
+          <a href="../index.html">← Back</a>
+        </div>
+                <ul class="case-toc">
+          <li><a href="#overview" class="is-active">Overview</a></li>
+          <li><a href="#challenge">The Challenge</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#final">Final Design</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main content -->
+      <article class="case-content">
+
+        <header class="case-hero reveal">
+          <div class="crumb">Branding · Reddot Winner · 2023</div>
+          <h1>XYG Window — <em>Reddot</em> 2023</h1>
+          <p class="lead">Brand & communication design for XYG Window — winner of the <strong style="color:var(--fg)">Reddot Design Award 2023</strong> in Brands &amp; Communication Design (02‑06428‑2023BC).</p>
+
+                    <dl class="case-meta">
+            <div>
+              <dt>Role</dt>
+              <dd>Brand Designer</dd>
+            </div>
+            <div>
+              <dt>Timeline</dt>
+              <dd>2023</dd>
+            </div>
+            <div>
+              <dt>Team</dt>
+              <dd>Studio + Client</dd>
+            </div>
+            <div>
+              <dt>Tools</dt>
+              <dd>Illustrator · InDesign<br/>Photoshop</dd>
+            </div>
+          </dl>
+
+          <div class="case-cover case-img" style="--c1:#ff5fbf; --c2:#b15bff;"><span class="placeholder-tag">Cover · 16:9</span></div>
+        </header>
+
+                <!-- Section 01 — Overview -->
+        <section id="overview" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">Section 01</div>
+            <h2>Overview</h2>
+            <p>XYG is a window-systems manufacturer. We rebuilt their brand identity and communications to translate technical precision into emotional warmth.</p>
+          </div>
+          <div class="case-img" style="--c1:#ff5fbf; --c2:#b15bff; height: 580px;">
+            <span class="placeholder-tag">Brand Overview · 580px</span>
+          </div>
+        </section>
+
+        <!-- Section 02 — The Challenge -->
+        <section id="challenge" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">Section 02</div>
+            <h2>The Challenge</h2>
+            <p>Industrial brands struggle to feel human. XYG's competitors looked like spec sheets. We needed an identity that signaled craftsmanship without losing engineering credibility.</p>
+          </div>
+          <div class="case-img" style="--c1:#b15bff; --c2:#6d3df0; height: 720px;">
+            <span class="placeholder-tag">Brand Audit · 720px</span>
+          </div>
+        </section>
+
+        <!-- Section 03 — Process -->
+        <section id="process" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">Section 03</div>
+            <h2>Process</h2>
+            <p>Workshops with the founder + ops team. Mood-board reviews. Three identity directions, narrowed to one over two presentation rounds. Applied across print, web, and packaging.</p>
+          </div>
+          <div class="case-img" style="--c1:#fbbf24; --c2:#fb7185; height: 900px;">
+            <span class="placeholder-tag">Mood Boards · 900px</span>
+          </div>
+          <div class="case-img" style="--c1:#ec4899; --c2:#8b5cf6; height: 1080px;">
+            <span class="placeholder-tag">Identity Exploration · 1080px</span>
+          </div>
+        </section>
+
+        <!-- Section 04 — Final Design -->
+        <section id="final" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">Section 04</div>
+            <h2>Final Design</h2>
+            <p>Wordmark, supporting typography, color system, and a flexible grid for technical communications. Carries across brochures, factory signage, trade-show booths, and packaging.</p>
+          </div>
+          <div class="case-img" style="--c1:#ff5fbf; --c2:#b15bff; height: 1280px;">
+            <span class="placeholder-tag">Brand System · 1280px</span>
+          </div>
+          <div class="case-img" style="--c1:#b15bff; --c2:#6d3df0; height: 820px;">
+            <span class="placeholder-tag">Applications · 820px</span>
+          </div>
+        </section>
+
+        <!-- Next project -->
+        <a class="case-next reveal" href="honey-fragrance.html">
+          <div>
+            <div class="label">Next project</div>
+            <h3>Honey Fragrance — Brand & Pack</h3>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">© 2026 Yu Tong Tiffany Ling · Built in Menlo Park · YTTL</div>
+</footer>
+
+<script>
+  // Theme toggle
+  const root = document.documentElement;
+  const toggle = document.getElementById('themeToggle');
+  const stored = localStorage.getItem('yttl-theme');
+  if (stored) root.setAttribute('data-theme', stored);
+  toggle.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('yttl-theme', next);
+  });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Card hover spotlight
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', `${e.clientX - r.left}px`);
+      card.style.setProperty('--my', `${e.clientY - r.top}px`);
+    });
+  });
+
+  // Subtle parallax on blobs
+  const blobs = document.querySelectorAll('.blob');
+  window.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 20;
+    const y = (e.clientY / window.innerHeight - 0.5) * 20;
+    blobs.forEach((b, i) => {
+      const k = (i + 1) * 0.6;
+      b.style.transform = `translate(${x * k}px, ${y * k}px)`;
+    });
+  }, { passive: true });
+
+  // Hamburger (mobile)
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.querySelector('nav .links');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('is-open');
+      hamburger.classList.toggle('is-open', open);
+      hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('is-open');
+        hamburger.classList.remove('is-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+    document.addEventListener('click', (e) => {
+      if (!navLinks.contains(e.target) && !hamburger.contains(e.target) && navLinks.classList.contains('is-open')) {
+        navLinks.classList.remove('is-open');
+        hamburger.classList.remove('is-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  // Case study: TOC scrollspy + smooth scroll
+  const tocLinks = document.querySelectorAll('.case-toc a');
+  const sections = document.querySelectorAll('.case-section');
+
+  const setActive = (id) => {
+    tocLinks.forEach(a => a.classList.toggle('is-active', a.getAttribute('href') === '#' + id));
+  };
+
+  const spy = new IntersectionObserver((entries) => {
+    // Find the section most in view
+    const visible = entries.filter(e => e.isIntersecting).sort((a,b) => b.intersectionRatio - a.intersectionRatio);
+    if (visible.length) setActive(visible[0].target.id);
+  }, { rootMargin: '-25% 0px -60% 0px', threshold: [0, 0.1, 0.3, 0.5, 0.8] });
+
+  sections.forEach(s => spy.observe(s));
+
+  tocLinks.forEach(a => {
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      const id = a.getAttribute('href').slice(1);
+      const target = document.getElementById(id);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setActive(id);
+      }
+    });
+  });
+</script>
+</body>
+</html>

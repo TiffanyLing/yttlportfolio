@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yu Tong Tiffany Ling — AI Product Designer & Founder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="atmosphere" aria-hidden="true">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+</div>
+<div class="noise" aria-hidden="true"></div>
+
+<!-- ============ Nav ============ -->
+<nav class="glass" role="navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="ytl-mark">YTTL</span><span class="ytl-name"><span class="ytl-grp"><b>Y</b><span class="ytl-rest">u</span></span><span class="ytl-grp"><b>T</b><span class="ytl-rest">ong</span></span><span class="ytl-grp"><b>T</b><span class="ytl-rest">iffany</span></span><span class="ytl-grp"><b>L</b><span class="ytl-rest">ing</span><span class="ytl-dot">..</span></span></span></a>
+    <div class="links">
+      <a href="index.html" class="active">
+        <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg></span>
+        <span class="lbl-long">Design</span><span class="lbl-short">Design</span>
+      </a>
+      
+      <a href="research.html">
+        <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+        <span class="lbl-long">About</span><span class="lbl-short">About</span>
+      </a>
+      
+      <a href="resume.html">
+        <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg></span>
+        Resume
+      </a>
+      <a class="icon-link" data-tip="LinkedIn" href="https://www.linkedin.com/in/yttl" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect x="2" y="9" width="4" height="12"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+      </a>
+      <a class="icon-link" data-tip="Email me" href="mailto:ttiffanyyllingg@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+      <a class="icon-link" data-tip="Google Scholar" href="https://scholar.google.com/citations?user=" target="_blank" rel="noopener" aria-label="Google Scholar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 10v6"/>
+          <path d="M2 10l10-5 10 5-10 5z"/>
+          <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+        </svg>
+      </a>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ Hero ============ -->
+<header class="hero">
+  <div class="container hero-inner">
+    <h1 class="title reveal d1">Hi there, it's <span class="accent">Tiffany</span> <span class="wave" aria-hidden="true">👋🏻</span><br/>Designing AI products<br/><span class="accent">from research to launch</span>.</h1>
+    <p class="lead reveal d2">
+      Full‑stack Product Designer, Program Manager, and AI‑startup founder.
+      4+ years leading 0‑to‑1 design and agent workflows across B2B and B2C, plus
+      <strong style="color:var(--fg)">three spotlight papers</strong> at CVPR'24, NeurIPS'25 &amp; CVPR'26.
+      Currently shipping <strong style="color:var(--fg)">Moodio</strong> at DataPizza.
+    </p>
+    <div class="marquee reveal d4" aria-label="Track record">
+      <div class="marquee-track">
+        <!-- set 1 -->
+        <span><b>Moodio</b> · Co‑founder / CPO</span>
+        <span><b>Microsoft Azure</b> · PM II</span>
+        <span><b>SOCA</b> · Lead Designer / PM</span>
+        <span><b>CGI</b> · Product Designer</span>
+        <span><b>Alibaba</b> · UI/UX Designer</span>
+        <span><b>United Nations</b> · Creative Designer</span>
+        <span><b>Parsons School of Design</b> · B.F.A. Communication Design</span>
+        <span><b>CMU</b> · M.S. MIIPS</span>
+        <!-- set 2 (duplicate for seamless loop) -->
+        <span aria-hidden="true"><b>Moodio</b> · Co‑founder / CPO</span>
+        <span aria-hidden="true"><b>Microsoft Azure</b> · PM II</span>
+        <span aria-hidden="true"><b>SOCA</b> · Lead Designer / PM</span>
+        <span aria-hidden="true"><b>CGI</b> · Product Designer</span>
+        <span aria-hidden="true"><b>Alibaba</b> · UI/UX Designer</span>
+        <span aria-hidden="true"><b>United Nations</b> · Creative Designer</span>
+        <span aria-hidden="true"><b>Parsons School of Design</b> · B.F.A. Communication Design</span>
+        <span aria-hidden="true"><b>CMU</b> · M.S. MIIPS</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ My Design / Selected Works ============ -->
+<section id="work" class="work-section">
+  <div class="container">
+
+    <!-- Category tabs -->
+    <div class="tabs reveal d1" role="tablist" aria-label="Design categories">
+      <button class="tab-btn is-active" role="tab" data-tab="product" aria-selected="true">Product Design</button>
+      <button class="tab-btn" role="tab" data-tab="branding" aria-selected="false">Branding Design</button>
+      <button class="tab-btn" role="tab" data-tab="visual" aria-selected="false">Visual Design</button>
+      <button class="tab-btn" role="tab" data-tab="finearts" aria-selected="false">Paintings</button>
+    </div>
+
+    <!-- Product Design tab (7 projects) -->
+    <div class="tab-panel is-active" data-panel="product" role="tabpanel">
+      <div class="works">
+
+        <article class="card reveal d1">
+          <a class="card-link" href="work/moodio.html" aria-label="Open Moodio case study"></a>
+          <div class="visual">
+            <div class="viz viz--moodio">
+              <span class="label-tag">Moodio · 2025–26</span>
+              <img class="moodio-logo" src="img/moodio/logo.png" alt="Moodio logo">
+              <div class="frame moodio-frame">
+                <div class="bar"><i></i><i></i><i></i></div>
+                <div class="body" style="padding:0; display:block;"><img src="img/moodio/canvas-relation.webp" alt="Moodio canvas — relation view with chat agent" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="body">
+            <div class="meta"><span>DataPizza · 2025–Now</span><span>B2C · AI Agent</span></div>
+            <h3>Moodio — All‑in‑One Video Agent</h3>
+            <p>Designed and vibe‑coded a web agent for video retrieval, generation and editing. Built a behavior‑driven data flywheel that improves model performance and agent UX with every session. <strong style="color:var(--fg)">Work in progress — beta launched March 2026.</strong></p>
+            <div class="tags"><span class="tag">0→1 Product</span><span class="tag">Agent UX</span><span class="tag">Vibe‑coded</span><span class="tag">VLM</span><span class="tag">WIP · Beta</span></div>
+          </div>
+        </article>
+
+        <article class="card reveal d2">
+          <a class="card-link" href="work/soca.html" aria-label="Open SOCA case study"></a>
+          <div class="visual">
+            <div class="viz viz--soca">
+              <img class="viz-fill" src="img/soca/thumb.webp" alt="SOCA — AI job-seeking platform thumbnail with company logos">
+            </div>
+          </div>
+          <div class="body">
+            <div class="meta"><span>SOCA · 2023–Now</span><span>AI · B2C + B2B</span></div>
+            <h3>SOCA</h3>
+            <p>Built &amp; launched one‑click resume generation, resume tailoring, auto‑apply, recruiter portal &amp; referral system. Mentored four interns and contributed to <strong style="color:var(--fg)">angel funding + 43% user growth</strong>.</p>
+            <div class="tags"><span class="tag">Lead Designer/PM</span><span class="tag">AI Features</span><span class="tag">Marketplace</span></div>
+          </div>
+        </article>
+
+        <article class="card reveal d1">
+          <a class="card-link" href="work/alibaba-xiniu.html" aria-label="Open Alibaba Xiniu Manufacture case study"></a>
+          <div class="visual">
+            <img class="card-cover" src="img/alibaba-xiniu/cover.png" alt="Alibaba Xiniu Manufacture — phone and laptop mockups on dark blue background">
+          </div>
+          <div class="body">
+            <div class="meta"><span>Alibaba · 2021</span><span>B2B Manufacturing</span></div>
+            <h3>Alibaba Xiniu Manufacture (2021)</h3>
+            <p>3D fashion manufacturing platform built 0→1 with iterative usability testing — boosted user satisfaction from <strong style="color:var(--fg)">68% to 93%</strong> and PM↔dev message efficiency from 53% to 83%.</p>
+            <div class="tags"><span class="tag">B2B SaaS</span><span class="tag">3D</span><span class="tag">UX Research</span></div>
+          </div>
+        </article>
+
+        <article class="card reveal d2">
+          <a class="card-link" href="work/honda-ev.html" aria-label="Open Honda EV Simulator case study"></a>
+          <div class="visual">
+            <img class="card-cover" src="img/honda-ev/cover.png" alt="Honda EV Simulator — phone and tablet mockups on green wave background">
+          </div>
+          <div class="body">
+            <div class="meta"><span>Honda × CMU · 2022</span><span>Mobile · UX Lead</span></div>
+            <h3>Honda EV Simulator APP (2022)</h3>
+            <p>MIIPS Capstone sponsored by Honda — researched and designed an experience to alleviate range anxiety for first‑time EV drivers transitioning from ICE vehicles.</p>
+            <div class="tags"><span class="tag">UX Lead</span><span class="tag">Research</span><span class="tag">Capstone</span></div>
+          </div>
+        </article>
+
+        <article class="card reveal d1">
+          <a class="card-link" href="work/builders-connect.html" aria-label="Open Builder's Connect case study"></a>
+          <div class="visual ratio-4-3">
+            <img class="card-cover" src="img/builders-connect/cover.png" alt="Builder's Connect — PWA mockup for Southern Company">
+          </div>
+          <div class="body">
+            <div class="meta"><span>CGI · 2022–23</span><span>B2B PWA</span></div>
+            <h3>Builder's Connect (2023)</h3>
+            <p>Innovative PWA for new‑construction projects with Southern Company — <strong style="color:var(--fg)">−30%</strong> service setup time, <strong style="color:var(--fg)">+25%</strong> operational efficiency.</p>
+            <div class="tags"><span class="tag">PWA</span><span class="tag">Design System</span><span class="tag">Enterprise</span></div>
+          </div>
+        </article>
+
+        <article class="card reveal d2">
+          <a class="card-link" href="work/xiaomi-smart-home.html" aria-label="Open Xiaomi Smart Home APP case study"></a>
+          <div class="visual">
+            <img class="card-cover" src="img/xiaomi-smart-home/cover.png" alt="Xiaomi Smart Home — three iPhone mockups showing fridge, lighting, and stats screens on cyan-purple background">
+          </div>
+          <div class="body">
+            <div class="meta"><span>Xiaomi · 2020</span><span>iOS / Android</span></div>
+            <h3>Xiaomi Smart Home APP (2020)</h3>
+            <p>Reimagined the smart home device control experience — fewer taps, more glanceable status. Visual language tuned for a lived‑in home.</p>
+            <div class="tags"><span class="tag">UI</span><span class="tag">IoT</span><span class="tag">Visual</span></div>
+          </div>
+        </article>
+
+        <article class="card reveal d1">
+          <a class="card-link" href="work/groop.html" aria-label="Open GROOP case study"></a>
+          <div class="visual">
+            <img class="card-cover" src="img/groop/cover.png" alt="GROOP — collage of pop-up event, map, filters, success, messages screens">
+          </div>
+          <div class="body">
+            <div class="meta"><span>2020</span><span>Mobile · Campus</span></div>
+            <h3>GROOP: On-Campus APP (2020)</h3>
+            <p>On‑campus social discovery for student‑run events that don't make it to the bulletin board.</p>
+            <div class="tags"><span class="tag">UX</span><span class="tag">Mobile</span><span class="tag">Social</span></div>
+          </div>
+        </article>
+
+        <a class="card card-cta reveal d2" href="research.html">
+          <div class="cta-content">
+            <h3>Check out my <em>research</em> projects <span class="cta-arrow">→</span></h3>
+            <p>Three spotlight papers in vision–language and human‑in‑the‑loop video systems — the AI work behind Moodio.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Branding Design tab (3 projects + research CTA) -->
+    <div class="tab-panel" data-panel="branding" role="tabpanel">
+      <div class="works">
+
+        <article class="card reveal d1">
+          <a class="card-link" href="work/chocolate-bar.html" aria-label="Open Chocolate Bar case study"></a>
+          <div class="visual card-cover-zoom">
+            <img class="card-cover card-cover--zoom-120" src="img/chocolate-bar/cover.jpg" alt="Chocolate Bar — four pastel tea-flavor wrappers fanned out on a white surface">
+          </div>
+          <div class="body">
+            <div class="meta"><span>2019</span><span>Packaging</span></div>
+            <h3>Chocolate Bar Package</h3>
+            <p>A four-flavor chocolate brand built around tea — bubble tea, Thai milk tea, matcha, and Earl Grey — each wrapped in latitude-and-longitude graphics marking where its tea was born.</p>
+            <div class="tags"><span class="tag">Identity</span><span class="tag">Packaging</span></div>
+          </div>
+        </article>
+
+        <article class="card reveal d2">
+          <a class="card-link" href="work/honey-fragrance.html" aria-label="Open Honey Fragrance case study"></a>
+          <div class="visual">
+            <img class="card-cover" src="img/honey-fragrance/cover.jpg" alt="Honey Fragrance — FLOWEY product family group shot">
+          </div>
+          <div class="body">
+            <div class="meta"><span>2019</span><span>Brand &amp; Pack</span></div>
+            <h3>Honey Fragrance</h3>
+            <p>FLOWEY — a honey-themed personal-care line built around the idea that honey <em>flows</em>. The wordmark fuses "flower" with "flow," carried through every product in the family.</p>
+            <div class="tags"><span class="tag">Branding</span><span class="tag">Packaging</span></div>
+          </div>
+        </article>
+
+        <article class="card reveal d3">
+          <a class="card-link" href="work/tea-project.html" aria-label="Open Tea Project case study"></a>
+          <div class="visual">
+            <img class="card-cover" src="img/tea-project/cover.jpg" alt="Tea Project — Zen tea brand product line">
+          </div>
+          <div class="body">
+            <div class="meta"><span>2019</span><span>Brand &amp; Pack</span></div>
+            <h3>Tea Project</h3>
+            <p>An oriental tea brand built around the feeling of <em>禪 (Zen)</em> — calligraphy painting, bamboo, and porcelain carry the brand from logo to tea bag to canister.</p>
+            <div class="tags"><span class="tag">Branding</span><span class="tag">Packaging</span></div>
+          </div>
+        </article>
+
+        <a class="card card-cta reveal d4" href="research.html">
+          <div class="cta-content">
+            <h3>Read more about <em>me</em> <span class="cta-arrow">→</span></h3>
+            <p>Bio, research papers, experience, and education — the full story behind the work.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Visual Design tab (3 rows · uniform row height · varied widths) -->
+    <div class="tab-panel" data-panel="visual" role="tabpanel">
+      <div class="vis-grid">
+
+        <div class="vis-row">
+          <a href="work/visual-nyc-subway.html" class="vis-item reveal d1" style="flex: 1.55;">
+            <div class="visual"><img src="img/visual/nyc-subway.webp" alt="NYC Subway Cards Design — colorful subway-card photographs"><div class="caption"><span class="ttl">NYC Subway Cards Design</span></div></div>
+          </a>
+          <a href="work/visual-liby-bottle.html" class="vis-item reveal d2" style="flex: 0.78;">
+            <div class="visual"><img src="img/visual/liby-bottle.webp" alt="LIBY Laundry Essence Bottle Design — minimal product mockup"><div class="caption"><span class="ttl">LIBY Laundry Essence Bottle Design</span></div></div>
+          </a>
+          <a href="work/visual-summer-palace.html" class="vis-item reveal d3" style="flex: 1.0;">
+            <div class="visual vis-zoom-132"><img src="img/visual/summer-palace.webp" alt="LIBY × Summer Palace Gift Box Package Design"><div class="caption"><span class="ttl">LIBY × Summer Palace Gift Box Package Design</span></div></div>
+          </a>
+        </div>
+
+        <div class="vis-row">
+          <a href="work/visual-ny-now.html" class="vis-item reveal d1" style="flex: 0.78;">
+            <div class="visual vis-zoom-160"><img src="img/visual/nynow.webp" alt="New York NOW Exhibition — guidebook cover"><div class="caption"><span class="ttl">New York NOW Exhibition</span></div></div>
+          </a>
+          <a href="work/visual-typography-poster.html" class="vis-item reveal d2" style="flex: 1.33;">
+            <div class="visual"><img src="img/visual/typography.webp" alt="Typography Poster — large display type composition"><div class="caption"><span class="ttl">Typography Poster</span></div></div>
+          </a>
+          <a href="work/visual-kanagawa.html" class="vis-item reveal d3" style="flex: 1.55;">
+            <div class="visual vis-zoom-120"><img src="img/visual/kanagawa.webp" alt="Poster of Beneath the Wave off Kanagawa — Hokusai-inspired editorial layout"><div class="caption"><span class="ttl">Poster Of "BENEATH THE WAVE OFF KANAGAWA"</span></div></div>
+          </a>
+        </div>
+
+        <div class="vis-row">
+          <a href="work/visual-dim-sum.html" class="vis-item reveal d1" style="flex: 2.1;">
+            <div class="visual"><img src="img/visual/dimsum.webp" alt="Dim Sum Font Design — letterforms built from dim sum dishes"><div class="caption"><span class="ttl">Dim Sum Font Design</span></div></div>
+          </a>
+          <a href="work/visual-cd-package.html" class="vis-item reveal d2" style="flex: 1.0;">
+            <div class="visual"><img src="img/visual/cd-package.webp" alt="CD Package Design — symmetric pink geometric artwork"><div class="caption"><span class="ttl">CD Package Design</span></div></div>
+          </a>
+          <a href="work/visual-make-it-stand-out.html" class="vis-item reveal d3" style="flex: 1.0;">
+            <div class="visual vis-zoom-200"><img src="img/visual/stand-out.webp" alt="Make It Stand Out — traffic-themed type/illustration grid"><div class="caption"><span class="ttl">Make It Stand Out</span></div></div>
+          </a>
+        </div>
+
+        <a class="vis-cta reveal d1" href="research.html">
+          <div class="cta-content">
+            <h3>Read more about <em>me</em> <span class="cta-arrow">→</span></h3>
+            <p>Bio, papers, experience, and education — the full story behind the work.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Fine Arts tab (6 masonry items, uniform width / varied heights) -->
+    <div class="tab-panel" data-panel="finearts" role="tabpanel">
+      <div class="gallery gallery--cols">
+        <div class="gallery-col">
+          <a class="gallery-item h-sq reveal d1" href="work/mini-paintings.html"><div class="visual"><img src="img/finearts/mini-paintings.webp?v=2" alt="Mini Paintings"><span class="gallery-year">2019 – present</span></div><div class="caption"><span class="ttl">Mini Paintings</span></div></a>
+          <a href="work/paint-cat-shanghai.html" class="gallery-item h-xtall reveal d2"><div class="visual"><img src="img/finearts/cat-shanghai.webp" alt="Cat In The Old-Shanghai Bar"><span class="gallery-year">2015</span></div><div class="caption"><span class="ttl">Cat In The Old-Shanghai Bar</span></div></a>
+        </div>
+        <div class="gallery-col">
+          <a href="work/paint-dragon.html" class="gallery-item h-wide reveal d2"><div class="visual"><img src="img/finearts/dragon.webp" alt="Dragon Comes Out"><span class="gallery-year">2016</span></div><div class="caption"><span class="ttl">Dragon Comes Out</span></div></a>
+          <a href="work/paint-red-pockets.html" class="gallery-item h-sq reveal d3"><div class="visual vis-zoom-120"><img src="img/finearts/red-pockets.webp" alt="Let the Red Pockets Fall"><span class="gallery-year">2016</span></div><div class="caption"><span class="ttl">Let the Red Pockets Fall</span></div></a>
+          <a href="work/paint-peacock.html" class="gallery-item h-wide reveal d1"><div class="visual"><img src="img/finearts/peacock.webp" alt="The Peacock"><span class="gallery-year">2015</span></div><div class="caption"><span class="ttl">The Peacock</span></div></a>
+        </div>
+        <div class="gallery-col">
+          <a href="work/paint-jiuzhaigou.html" class="gallery-item h-xwide reveal d1"><div class="visual vis-zoom-160"><img src="img/finearts/jiuzhaigou.webp" alt="Jiu Zhai Gou Valley"><span class="gallery-year">2018</span></div><div class="caption"><span class="ttl">Jiu Zhai Gou Valley</span></div></a>
+          <a href="work/paint-wedding-sedan.html" class="gallery-item h-sq reveal d2"><div class="visual"><img src="img/finearts/wedding-sedan.webp" alt="Sitting in The Untraditional Wedding Sedan"><span class="gallery-year">2016</span></div><div class="caption"><span class="ttl">Sitting in The Untraditional Wedding Sedan</span></div></a>
+          <a class="gallery-item h-sq reveal d3" href="work/tote-paintings.html"><div class="visual"><img src="img/finearts/tote.webp" alt="Random Tote Paintings"><span class="gallery-year">2025</span></div><div class="caption"><span class="ttl">Random Tote Paintings</span></div></a>
+        </div>
+      </div>
+      <a class="vis-cta reveal d1" href="research.html">
+        <div class="cta-content">
+          <h3>Read more about <em>me</em> <span class="cta-arrow">→</span></h3>
+          <p>Bio, papers, experience, and education — the full story behind the work.</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">© 2026 Yu Tong Tiffany Ling · Built in Menlo Park · YTTL</div>
+</footer>
+
+<script>
+  // Theme toggle with persistence
+  const root = document.documentElement;
+  const toggle = document.getElementById('themeToggle');
+  const stored = localStorage.getItem('yttl-theme');
+  if (stored) root.setAttribute('data-theme', stored);
+  toggle.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('yttl-theme', next);
+  });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Card hover spotlight
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', `${e.clientX - r.left}px`);
+      card.style.setProperty('--my', `${e.clientY - r.top}px`);
+    });
+  });
+
+  // Subtle parallax on blobs
+  const blobs = document.querySelectorAll('.blob');
+  window.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 20;
+    const y = (e.clientY / window.innerHeight - 0.5) * 20;
+    blobs.forEach((b, i) => {
+      const k = (i + 1) * 0.6;
+      b.style.transform = `translate(${x * k}px, ${y * k}px)`;
+    });
+  }, { passive: true });
+
+  // Hamburger menu (mobile)
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.querySelector('nav .links');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('is-open');
+      hamburger.classList.toggle('is-open', open);
+      hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('is-open');
+        hamburger.classList.remove('is-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+    document.addEventListener('click', (e) => {
+      if (!navLinks.contains(e.target) && !hamburger.contains(e.target) && navLinks.classList.contains('is-open')) {
+        navLinks.classList.remove('is-open');
+        hamburger.classList.remove('is-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  // Tab switcher
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const tabPanels = document.querySelectorAll('.tab-panel');
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.dataset.tab;
+      tabBtns.forEach(b => {
+        const active = b === btn;
+        b.classList.toggle('is-active', active);
+        b.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      tabPanels.forEach(p => {
+        p.classList.toggle('is-active', p.dataset.panel === target);
+      });
+    });
+  });
+</script>
+</body>
+</html>

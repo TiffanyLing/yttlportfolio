@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Builder's Connect (2023) · Yu Tong Tiffany Ling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="atmosphere" aria-hidden="true">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+</div>
+<div class="noise" aria-hidden="true"></div>
+
+<!-- ============ Nav ============ -->
+<nav class="glass" role="navigation">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand"><span class="ytl-mark">YTTL</span><span class="ytl-name"><span class="ytl-grp"><b>Y</b><span class="ytl-rest">u</span></span><span class="ytl-grp"><b>T</b><span class="ytl-rest">ong</span></span><span class="ytl-grp"><b>T</b><span class="ytl-rest">iffany</span></span><span class="ytl-grp"><b>L</b><span class="ytl-rest">ing</span><span class="ytl-dot">..</span></span></span></a>
+    <div class="links">
+      <a href="../index.html" class="active">
+        <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg></span>
+        <span class="lbl-long">Design</span><span class="lbl-short">Design</span>
+      </a>
+      
+      <a href="../research.html">
+        <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+        <span class="lbl-long">About</span><span class="lbl-short">About</span>
+      </a>
+      
+      <a href="../resume.html">
+        <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg></span>
+        Resume
+      </a>
+      <a class="icon-link" data-tip="LinkedIn" href="https://www.linkedin.com/in/yttl" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect x="2" y="9" width="4" height="12"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+      </a>
+      <a class="icon-link" data-tip="Email me" href="mailto:ttiffanyyllingg@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+      <a class="icon-link" data-tip="Google Scholar" href="https://scholar.google.com/citations?user=" target="_blank" rel="noopener" aria-label="Google Scholar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 10v6"/>
+          <path d="M2 10l10-5 10 5-10 5z"/>
+          <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+        </svg>
+      </a>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ Case study ============ -->
+<main>
+  <div class="container">
+    <div class="case-layout">
+
+      <!-- Sticky sidebar with TOC -->
+      <aside class="case-sidebar">
+        <div class="case-back">
+          <a href="../index.html">← Back</a>
+        </div>
+                <ul class="case-toc">
+          <li><a href="#overview" class="is-active">Overview</a></li>
+          <li><a href="#request">Access request</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main content -->
+      <article class="case-content">
+
+        <header class="case-hero reveal">
+          <div class="crumb">CGI · Southern Co. · B2B PWA · 2022 — 2023</div>
+          <h1>Builder's Connect — <em>Faster</em> New Builds</h1>
+          <p class="lead">A Progressive Web App for Southern Company's new-construction workflow — replaced a 12-step legacy form with a guided flow. <strong style="color:var(--fg)">−30% service setup time, +25% operational efficiency.</strong></p>
+
+                    <dl class="case-meta">
+            <div>
+              <dt>Role</dt>
+              <dd>UI/UX Designer at CGI</dd>
+            </div>
+            <div>
+              <dt>Duration</dt>
+              <dd>4 months</dd>
+            </div>
+            <div>
+              <dt>Team</dt>
+              <dd>2 UX Designers<br/>3 Business Analysts<br/>3 Product Managers<br/>8 Developers<br/>4 Quality Assurances</dd>
+            </div>
+            <div>
+              <dt>Tools</dt>
+              <dd>Figma · Miro<br/>Azure DevOps</dd>
+            </div>
+          </dl>
+        </header>
+
+                <!-- Section 01 — Overview -->
+        <section id="overview" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">Section 01</div>
+            <h2>Overview</h2>
+            <p>This is a project from client that we build a new, customer-facing Progressive Web App (PWA) portal for Southern Company to help manage the run service/set meter process for new construction.</p>
+            <p>Southern Company is an energy industry company specializing in power utilities, operating across three different southern states. The mission of our consultant team is to aid customers in setting up electricity for new residences, condos, and buildings. We focus on comprehending the user journey and the needs of both external and internal stakeholders in order to create user interface screens tailored to five specific roles.</p>
+            <p>Our workflow includes creating sitemaps, wireframes, and a customized design system for our client. We collaborate closely with business analysts, developers, stakeholders, and clients, consisting of an internal team of 20 people.</p>
+          </div>
+          <img class="case-img" src="../img/builders-connect/team/team.png" alt="Builder's Connect — product overview (desktop + mobile mockup)">
+        </section>
+
+        <!-- Section 02 — Request Access -->
+        <section id="request" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">Section 02</div>
+            <h2>Access request</h2>
+            <p>Please fill in the form below to contact me if you would like to learn more about the project or get access to the secured case study ⬇️</p>
+          </div>
+
+          <form class="request-form" id="requestForm" novalidate>
+            <div class="rf-row">
+              <label class="rf-field">
+                <span class="rf-label">Name</span>
+                <input type="text" name="name" autocomplete="name" required>
+              </label>
+              <label class="rf-field">
+                <span class="rf-label">Email</span>
+                <input type="email" name="email" autocomplete="email" required>
+              </label>
+            </div>
+            <label class="rf-field">
+              <span class="rf-label">Why are you requesting access?</span>
+              <textarea name="message" rows="5" placeholder="A short note about why you'd like to see this case study (recruiter, hiring manager, fellow designer, etc.)" required></textarea>
+            </label>
+            <button type="submit" class="rf-submit case-cta-btn">
+              Send request
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <p class="rf-note" id="rfStatus" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <!-- Next project -->
+        <a class="case-next reveal" href="xiaomi-smart-home.html">
+          <div>
+            <div class="label">Next project</div>
+            <h3>Xiaomi Smart Home APP</h3>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">© 2026 Yu Tong Tiffany Ling · Built in Menlo Park · YTTL</div>
+</footer>
+
+<script>
+  // Theme toggle
+  const root = document.documentElement;
+  const toggle = document.getElementById('themeToggle');
+  const stored = localStorage.getItem('yttl-theme');
+  if (stored) root.setAttribute('data-theme', stored);
+  toggle.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('yttl-theme', next);
+  });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Card hover spotlight
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', `${e.clientX - r.left}px`);
+      card.style.setProperty('--my', `${e.clientY - r.top}px`);
+    });
+  });
+
+  // Subtle parallax on blobs
+  const blobs = document.querySelectorAll('.blob');
+  window.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 20;
+    const y = (e.clientY / window.innerHeight - 0.5) * 20;
+    blobs.forEach((b, i) => {
+      const k = (i + 1) * 0.6;
+      b.style.transform = `translate(${x * k}px, ${y * k}px)`;
+    });
+  }, { passive: true });
+
+  // Hamburger (mobile)
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.querySelector('nav .links');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('is-open');
+      hamburger.classList.toggle('is-open', open);
+      hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('is-open');
+        hamburger.classList.remove('is-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+    document.addEventListener('click', (e) => {
+      if (!navLinks.contains(e.target) && !hamburger.contains(e.target) && navLinks.classList.contains('is-open')) {
+        navLinks.classList.remove('is-open');
+        hamburger.classList.remove('is-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  // Case study: TOC scrollspy + smooth scroll
+  const tocLinks = document.querySelectorAll('.case-toc a');
+  const sections = document.querySelectorAll('.case-section');
+
+  const setActive = (id) => {
+    tocLinks.forEach(a => a.classList.toggle('is-active', a.getAttribute('href') === '#' + id));
+  };
+
+  const spy = new IntersectionObserver((entries) => {
+    // Find the section most in view
+    const visible = entries.filter(e => e.isIntersecting).sort((a,b) => b.intersectionRatio - a.intersectionRatio);
+    if (visible.length) setActive(visible[0].target.id);
+  }, { rootMargin: '-25% 0px -60% 0px', threshold: [0, 0.1, 0.3, 0.5, 0.8] });
+
+  sections.forEach(s => spy.observe(s));
+
+  tocLinks.forEach(a => {
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      const id = a.getAttribute('href').slice(1);
+      const target = document.getElementById(id);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setActive(id);
+      }
+    });
+  });
+
+  // Request access form — opens user's mail client with prefilled message
+  const requestForm = document.getElementById('requestForm');
+  if (requestForm) {
+    const status = document.getElementById('rfStatus');
+    requestForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(requestForm);
+      const name = (data.get('name') || '').toString().trim();
+      const email = (data.get('email') || '').toString().trim();
+      const message = (data.get('message') || '').toString().trim();
+      status.classList.remove('is-success', 'is-error');
+      if (!name || !email || !message) {
+        status.textContent = 'Please fill in all three fields.';
+        status.classList.add('is-error');
+        return;
+      }
+      const subject = encodeURIComponent(`[Builder's Connect] Case study access request — ${name}`);
+      const body = encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\n\nReason for access:\n${message}\n\n—\nSent from yttldesign.com`
+      );
+      window.location.href = `mailto:ttiffanyyllingg@gmail.com?subject=${subject}&body=${body}`;
+      status.textContent = "Opening your email app… if nothing happens, please email me directly at ttiffanyyllingg@gmail.com.";
+      status.classList.add('is-success');
+    });
+  }
+</script>
+</body>
+</html>

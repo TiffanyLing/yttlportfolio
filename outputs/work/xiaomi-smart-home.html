@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Xiaomi Smart Home APP (2020) · Yu Tong Tiffany Ling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="atmosphere" aria-hidden="true">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+</div>
+<div class="noise" aria-hidden="true"></div>
+
+<!-- ============ Nav ============ -->
+<nav class="glass" role="navigation">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand"><span class="ytl-mark">YTTL</span><span class="ytl-name"><span class="ytl-grp"><b>Y</b><span class="ytl-rest">u</span></span><span class="ytl-grp"><b>T</b><span class="ytl-rest">ong</span></span><span class="ytl-grp"><b>T</b><span class="ytl-rest">iffany</span></span><span class="ytl-grp"><b>L</b><span class="ytl-rest">ing</span><span class="ytl-dot">..</span></span></span></a>
+    <div class="links">
+      <a href="../index.html" class="active">
+        <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg></span>
+        <span class="lbl-long">Design</span><span class="lbl-short">Design</span>
+      </a>
+      
+      <a href="../research.html">
+        <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+        <span class="lbl-long">About</span><span class="lbl-short">About</span>
+      </a>
+      
+      <a href="../resume.html">
+        <span class="link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg></span>
+        Resume
+      </a>
+      <a class="icon-link" data-tip="LinkedIn" href="https://www.linkedin.com/in/yttl" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+          <rect x="2" y="9" width="4" height="12"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+      </a>
+      <a class="icon-link" data-tip="Email me" href="mailto:ttiffanyyllingg@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+      <a class="icon-link" data-tip="Google Scholar" href="https://scholar.google.com/citations?user=" target="_blank" rel="noopener" aria-label="Google Scholar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 10v6"/>
+          <path d="M2 10l10-5 10 5-10 5z"/>
+          <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+        </svg>
+      </a>
+    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ============ Case study ============ -->
+<main>
+  <div class="container">
+    <div class="case-layout">
+
+      <!-- Sticky sidebar with TOC -->
+      <aside class="case-sidebar">
+        <div class="case-back">
+          <a href="../index.html">← Back</a>
+        </div>
+                <ul class="case-toc">
+          <li><a href="#overview" class="is-active">Overview</a></li>
+          <li><a href="#wireframe">Wireframe</a></li>
+          <li><a href="#visual">Visual Design</a></li>
+          <li><a href="#motion">Motion Design</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main content -->
+      <article class="case-content">
+
+        <header class="case-hero reveal">
+          <div class="crumb">Xiaomi · iOS / Android · IoT · 2020</div>
+          <h1>Xiaomi Smart Home — <em>Glanceable</em> Control</h1>
+          <p class="lead">Reimagined the device control experience for Xiaomi's smart home app — fewer taps, more glanceable status, and a visual language tuned for a lived-in home rather than a showroom.</p>
+
+                    <dl class="case-meta">
+            <div>
+              <dt>Role</dt>
+              <dd>UI/UX Design Intern</dd>
+            </div>
+            <div>
+              <dt>Timeline</dt>
+              <dd>Oct 2020 — Nov 2020</dd>
+            </div>
+            <div>
+              <dt>Team</dt>
+              <dd>Solo project</dd>
+            </div>
+            <div>
+              <dt>Tools</dt>
+              <dd>Sketch · Principle</dd>
+            </div>
+          </dl>
+        </header>
+
+                <!-- Section 01 — Overview -->
+        <section id="overview" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">Section 01</div>
+            <h2>Overview</h2>
+            <p class="case-pubdate"><a href="https://www.yttldesign.com/uiux-design/xiaomi-smart-home-app" target="_blank" rel="noopener">November 22, 2020</a> in <a href="https://www.yttldesign.com/uiux-design/category/UI" target="_blank" rel="noopener">UI</a>, <a href="https://www.yttldesign.com/uiux-design/category/UX" target="_blank" rel="noopener">UX</a></p>
+            <p>This project is to design a mobile phone user interface for Xiaomi Smart Home software. Xiaomi Smart Home is a complete set of closed‑loop experience composed of smart hardware products of Xiaomi Eco‑Chain Enterprise. The Xiaomi Smart Home APP is a unified device connection portal, deeply integrated into the MIUI system, and the lock screen interface integrates the device control center to simplify the operation process and facilitate users to quickly connect and use Xiaomi smart hardware devices with one click.</p>
+          </div>
+
+          <h3 class="case-subhead">Branding Requirements</h3>
+          <ol class="case-list">
+            <li><strong>Cozy feeling.</strong> This software focuses on smart homes. The purpose is to let users experience the warm feeling of home while they are using.</li>
+            <li><strong>User‑friendly.</strong> The software has a broad audience — both male and female; the youth and the aged; the tech‑newbie and the expert. So the software interface should be in explicit language and inclusive to all the target users.</li>
+            <li><strong>Follows the trend of design.</strong> Recent design trends are characterized by flatness and roundness.</li>
+            <li><strong>The use of colors should conform to the brand's positioning.</strong></li>
+          </ol>
+        </section>
+
+        <!-- Section — Wireframe Design -->
+        <section id="wireframe" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">Section 02</div>
+            <h2>Wireframe Design</h2>
+          </div>
+
+          <!-- #1 Beginning Interface -->
+          <div class="feature-block">
+            <div class="feature-text">
+              <h4>#1 Beginning Interface</h4>
+              <p>These two interfaces are the interfaces displayed when the software launches. The one on the left is the buffer interface, and the picture in the middle will be placed with illustrations or advertising banners. On the right is the interface for the user to log in to the software.</p>
+            </div>
+            <img class="feature-image" src="../img/xiaomi-smart-home/wireframes/wf-1.webp" alt="Wireframe — Beginning interface (buffer + login)">
+          </div>
+
+          <!-- #2 Home Interface -->
+          <div class="feature-block feature-block--stack">
+            <div class="feature-text">
+              <h4>#2 Home Interface</h4>
+              <p>These five interfaces are the "Home" page.</p>
+              <ol class="feature-list">
+                <li><strong>Room display:</strong> Because this software aims to facilitate the use of smart homes, the room options are displayed when the software launches. Users can view the smart home appliances in each room by clicking on each thumbnail/card.</li>
+                <li><strong>Add button:</strong> Users can add a new room or new device by clicking the plus sign in the upper right corner.</li>
+                <li><strong>Equipment display · thermostat:</strong> This display is the exclusive setting page of the thermostat. The user can control the temperature through the dial on the right. There are buttons to control cooling, heating, and settings in the lower-left corner.</li>
+                <li><strong>Equipment display · main lights:</strong> This is the exclusive setting page of lights. The user can control the brightness of the light through the dial on the right. There are buttons on the lower-left corner to control the bulb's wattage and adjust the color of the light.</li>
+                <li><strong>Equipment display · thermostat setting:</strong> This shows the thermostat setting page. Users can control the cooling, heating and fan buttons through the upper part. There are plus and minus buttons on the left and right sides to control the temperature. Shown below are indoor temperature and humidity and outdoor temperature and humidity.</li>
+              </ol>
+            </div>
+            <img class="feature-image" src="../img/xiaomi-smart-home/wireframes/wf-2.webp" alt="Wireframe — Home interface (5 screens)">
+          </div>
+
+          <!-- #3 Statics Interface -->
+          <div class="feature-block">
+            <div class="feature-text">
+              <h4>#3 Statics Interface</h4>
+              <p>These three interfaces display the data of the room. The software will automatically record the data. Users can view past data records through the calendar. In the view detail interface, the user can see the specific data of each room and each device.</p>
+            </div>
+            <img class="feature-image" src="../img/xiaomi-smart-home/wireframes/wf-3.webp" alt="Wireframe — Statics interface (3 screens)">
+          </div>
+
+          <!-- #4 Routines Interface -->
+          <div class="feature-block">
+            <div class="feature-text">
+              <h4>#4 Routines Interface</h4>
+              <p>These two interfaces are for setting daily plans. Users can add a routine through the plus button in the upper right corner to let the smart home automatically start at regular intervals. On this main page, the user can choose whether to turn on the device through the toggle button.</p>
+            </div>
+            <img class="feature-image" src="../img/xiaomi-smart-home/wireframes/wf-4.webp" alt="Wireframe — Routines interface">
+          </div>
+
+          <!-- #5 Setting Interface -->
+          <div class="feature-block">
+            <div class="feature-text">
+              <h4>#5 Setting Interface</h4>
+              <p>The user can set the software on this interface. The top one is the user's avatar and name. The user can set personal information on the edit button on the right. The middle column is the three most-commonly-used control buttons. Below are some less-frequently-used settings for the software.</p>
+            </div>
+            <img class="feature-image" src="../img/xiaomi-smart-home/wireframes/wf-5.webp" alt="Wireframe — Setting interface">
+          </div>
+
+          <h3 class="case-subhead">Elements Design</h3>
+          <div class="case-img" style="--c1:#cab8ff; --c2:#a78bfa;"><span class="placeholder-tag">Elements Design · placeholder</span></div>
+        </section>
+
+        <!-- Section — Visual Design -->
+        <section id="visual" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">Section 03</div>
+            <h2>Visual Design</h2>
+          </div>
+
+          <div class="screenshot-grid">
+            <img class="screenshot-img" src="../img/xiaomi-smart-home/visual/vis-01.webp" alt="Visual design — screen 1">
+            <img class="screenshot-img" src="../img/xiaomi-smart-home/visual/vis-02.webp" alt="Visual design — screen 2">
+            <img class="screenshot-img" src="../img/xiaomi-smart-home/visual/vis-03.webp" alt="Visual design — screen 3">
+            <img class="screenshot-img" src="../img/xiaomi-smart-home/visual/vis-04.webp" alt="Visual design — screen 4">
+            <img class="screenshot-img" src="../img/xiaomi-smart-home/visual/vis-05.webp" alt="Visual design — screen 5">
+            <img class="screenshot-img" src="../img/xiaomi-smart-home/visual/vis-06.webp" alt="Visual design — screen 6">
+            <img class="screenshot-img" src="../img/xiaomi-smart-home/visual/vis-07.webp" alt="Visual design — screen 7">
+            <img class="screenshot-img" src="../img/xiaomi-smart-home/visual/vis-08.webp" alt="Visual design — screen 8">
+            <img class="screenshot-img" src="../img/xiaomi-smart-home/visual/vis-09.webp" alt="Visual design — screen 9">
+            <img class="screenshot-img" src="../img/xiaomi-smart-home/visual/vis-10.webp" alt="Visual design — screen 10">
+            <img class="screenshot-img" src="../img/xiaomi-smart-home/visual/vis-11.webp" alt="Visual design — screen 11">
+            <img class="screenshot-img" src="../img/xiaomi-smart-home/visual/vis-12.webp" alt="Visual design — screen 12">
+            <img class="screenshot-img" src="../img/xiaomi-smart-home/visual/vis-13.webp" alt="Visual design — screen 13">
+            <img class="screenshot-img" src="../img/xiaomi-smart-home/visual/vis-14.webp" alt="Visual design — screen 14">
+          </div>
+
+          <ul class="case-list case-list--bullet">
+            <li>The overall color is in line with Xiaomi's smart home positioning.</li>
+            <li>In order to create a cozy feeling, all patterns and panels are curved, giving a soft feeling.</li>
+            <li>The software style conforms to the trend of the recently updated software system style.</li>
+            <li>All icons are composed of simple dots, lines, and planes.</li>
+            <li>Added smooth page transition animation.</li>
+            <li>The color of the interface changes slightly according to the characteristics of the product.</li>
+            <li>The color matching is not complicated, and ambient colors are used.</li>
+            <li>Fonts and navigation bar are simple, and the font and color can be clearly distinguished from the background color.</li>
+          </ul>
+
+          <h3 class="case-subhead">Branding Design</h3>
+          <div class="branding-stack">
+            <img class="branding-img" src="../img/xiaomi-smart-home/branding/brand-1.webp" alt="Branding — color, icons, buttons">
+            <img class="branding-img" src="../img/xiaomi-smart-home/branding/brand-2.webp" alt="Branding — typography">
+          </div>
+        </section>
+
+        <!-- Section — Motion Design -->
+        <section id="motion" class="case-section reveal">
+          <div class="case-section-head">
+            <div class="num">Section 04</div>
+            <h2>Motion Design</h2>
+          </div>
+
+          <div class="video-row">
+            <img class="video-clip" src="../img/xiaomi-smart-home/motion/1.webp" alt="Xiaomi motion clip 1">
+            <img class="video-clip" src="../img/xiaomi-smart-home/motion/2.webp" alt="Xiaomi motion clip 2">
+            <img class="video-clip" src="../img/xiaomi-smart-home/motion/3.webp" alt="Xiaomi motion clip 3">
+          </div>
+
+          <a class="case-cta-btn" href="https://www.figma.com/proto/XGsvBqriJQBIM8SC5vfIjl/Xiaomi-Smart-Home-Application?node-id=9-575&scaling=scale-down&viewport=194%2C-315%2C0.227119579911232&t=GkwkbeMoGhih0c0u-1" target="_blank" rel="noopener">
+            Click to view
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          </a>
+        </section>
+
+        <!-- Next project -->
+        <a class="case-next reveal" href="groop.html">
+          <div>
+            <div class="label">Next project</div>
+            <h3>GROOP — On-Campus APP</h3>
+          </div>
+          <span class="arrow">→</span>
+        </a>
+
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">© 2026 Yu Tong Tiffany Ling · Built in Menlo Park · YTTL</div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog">
+  <button class="lb-close" aria-label="Close">&times;</button>
+  <button class="lb-nav lb-prev" aria-label="Previous">&#8249;</button>
+  <button class="lb-nav lb-next" aria-label="Next">&#8250;</button>
+  <img class="lb-img" id="lbImg" alt="">
+  <div class="lb-counter" id="lbCounter"></div>
+</div>
+
+<script>
+  // Theme toggle
+  const root = document.documentElement;
+  const toggle = document.getElementById('themeToggle');
+  const stored = localStorage.getItem('yttl-theme');
+  if (stored) root.setAttribute('data-theme', stored);
+  toggle.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('yttl-theme', next);
+  });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Card hover spotlight
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', `${e.clientX - r.left}px`);
+      card.style.setProperty('--my', `${e.clientY - r.top}px`);
+    });
+  });
+
+  // Subtle parallax on blobs
+  const blobs = document.querySelectorAll('.blob');
+  window.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 20;
+    const y = (e.clientY / window.innerHeight - 0.5) * 20;
+    blobs.forEach((b, i) => {
+      const k = (i + 1) * 0.6;
+      b.style.transform = `translate(${x * k}px, ${y * k}px)`;
+    });
+  }, { passive: true });
+
+  // Hamburger (mobile)
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.querySelector('nav .links');
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('is-open');
+      hamburger.classList.toggle('is-open', open);
+      hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('is-open');
+        hamburger.classList.remove('is-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+    document.addEventListener('click', (e) => {
+      if (!navLinks.contains(e.target) && !hamburger.contains(e.target) && navLinks.classList.contains('is-open')) {
+        navLinks.classList.remove('is-open');
+        hamburger.classList.remove('is-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  // Case study: TOC scrollspy + smooth scroll
+  const tocLinks = document.querySelectorAll('.case-toc a');
+  const sections = document.querySelectorAll('.case-section');
+
+  const setActive = (id) => {
+    tocLinks.forEach(a => a.classList.toggle('is-active', a.getAttribute('href') === '#' + id));
+  };
+
+  const spy = new IntersectionObserver((entries) => {
+    // Find the section most in view
+    const visible = entries.filter(e => e.isIntersecting).sort((a,b) => b.intersectionRatio - a.intersectionRatio);
+    if (visible.length) setActive(visible[0].target.id);
+  }, { rootMargin: '-25% 0px -60% 0px', threshold: [0, 0.1, 0.3, 0.5, 0.8] });
+
+  sections.forEach(s => spy.observe(s));
+
+  tocLinks.forEach(a => {
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      const id = a.getAttribute('href').slice(1);
+      const target = document.getElementById(id);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setActive(id);
+      }
+    });
+  });
+
+  // Lightbox for Visual Design screenshots
+  (() => {
+    const imgs = Array.from(document.querySelectorAll('.screenshot-img'));
+    if (!imgs.length) return;
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lbImg');
+    const lbCounter = document.getElementById('lbCounter');
+    const closeBtn = lb.querySelector('.lb-close');
+    const prevBtn = lb.querySelector('.lb-prev');
+    const nextBtn = lb.querySelector('.lb-next');
+    let idx = 0;
+
+    const show = (i) => {
+      idx = (i + imgs.length) % imgs.length;
+      lbImg.src = imgs[idx].src;
+      lbImg.alt = imgs[idx].alt || '';
+      lbCounter.textContent = `${idx + 1} / ${imgs.length}`;
+    };
+    const open = (i) => {
+      show(i);
+      lb.classList.add('is-open');
+      lb.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    };
+    const close = () => {
+      lb.classList.remove('is-open');
+      lb.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    };
+
+    imgs.forEach((img, i) => {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', () => open(i));
+    });
+    closeBtn.addEventListener('click', close);
+    prevBtn.addEventListener('click', (e) => { e.stopPropagation(); show(idx - 1); });
+    nextBtn.addEventListener('click', (e) => { e.stopPropagation(); show(idx + 1); });
+    lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
+    document.addEventListener('keydown', (e) => {
+      if (!lb.classList.contains('is-open')) return;
+      if (e.key === 'Escape') close();
+      else if (e.key === 'ArrowLeft') show(idx - 1);
+      else if (e.key === 'ArrowRight') show(idx + 1);
+    });
+  })();
+</script>
+</body>
+</html>
